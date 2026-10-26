@@ -1,0 +1,390 @@
+{
+  "machines": [
+    {
+      "id": "rtg-crc",
+      "name": "RTG CRC",
+      "systems": [
+        {
+          "id": "gantry",
+          "name": "Gantry",
+          "notes": [
+            "Ensure the crane has come to a complete standstill and gantry wheel clamps/chocks are secured before working on travel motors.",
+            "The four travel motors are interlinked — isolating one motor disables full gantry travel."
+          ],
+          "loads": [
+            {
+              "id": "q41",
+              "breaker": "Q41",
+              "name": "Supply Gantry Motor 1",
+              "panel": "EH5",
+              "notes": [
+                "Gantry Travel Motor 1 — Ensure crane is completely stationary before isolating.",
+                "All four travel motors are mechanically and electrically coupled via speed synchronization."
+              ],
+              "relatedBreakers": [
+                "Q42",
+                "Q43",
+                "Q44"
+              ],
+              "otherSources": []
+            },
+            {
+              "id": "q42",
+              "breaker": "Q42",
+              "name": "Supply Gantry Motor 2",
+              "panel": "EH5",
+              "notes": [
+                "Gantry Travel Motor 2 — Ensure crane is completely stationary before isolating."
+              ],
+              "relatedBreakers": [
+                "Q41",
+                "Q43",
+                "Q44"
+              ],
+              "otherSources": []
+            },
+            {
+              "id": "q43",
+              "breaker": "Q43",
+              "name": "Supply Gantry Motor 3",
+              "panel": "EH5",
+              "notes": [
+                "Gantry Travel Motor 3 — Ensure crane is completely stationary before isolating."
+              ],
+              "relatedBreakers": [
+                "Q41",
+                "Q42",
+                "Q44"
+              ],
+              "otherSources": []
+            },
+            {
+              "id": "q44",
+              "breaker": "Q44",
+              "name": "Supply Gantry Motor 4",
+              "panel": "EH5",
+              "notes": [
+                "Gantry Travel Motor 4 — Ensure crane is completely stationary before isolating."
+              ],
+              "relatedBreakers": [
+                "Q41",
+                "Q42",
+                "Q43"
+              ],
+              "otherSources": []
+            },
+            {
+              "id": "f67",
+              "breaker": "F67",
+              "name": "Gantry Lights — Corner 1 & 4",
+              "panel": "EH1",
+              "notes": [
+                "Lighting for corners 1 & 4 — Ensure lighting control switch is off before opening breaker."
+              ],
+              "relatedBreakers": [
+                "F67A"
+              ],
+              "otherSources": [
+                {
+                  "label": "Lighting Transformer",
+                  "description": "Check F6 — Lighting transformer supply breaker in panel EH1."
+                }
+              ]
+            },
+            {
+              "id": "f67a",
+              "breaker": "F67A",
+              "name": "Gantry Lights — Corner 2 & 3",
+              "panel": "EH1",
+              "notes": [
+                "Lighting for corners 2 & 3 — Ensure lighting control switch is off before opening breaker."
+              ],
+              "relatedBreakers": [
+                "F67"
+              ],
+              "otherSources": [
+                {
+                  "label": "Lighting Transformer",
+                  "description": "Check F6 — Lighting transformer supply breaker in panel EH1."
+                }
+              ]
+            },
+            {
+              "id": "f6",
+              "breaker": "F6",
+              "name": "Lighting Transformer",
+              "panel": "EH1",
+              "notes": [
+                "Main lighting transformer supply — Opening breaker de-energizes all floodlights and platform lighting."
+              ],
+              "relatedBreakers": [
+                "F67",
+                "F67A"
+              ],
+              "otherSources": []
+            },
+            {
+              "id": "f11",
+              "breaker": "F11",
+              "name": "Control ON",
+              "panel": "EH1",
+              "notes": [
+                "Main Crane Control Circuit Safety — Isolating disables all motion control and safety circuits.",
+                "Notify crane operator and ensure all systems are securely parked before isolating."
+              ],
+              "relatedBreakers": [],
+              "otherSources": []
+            },
+            {
+              "id": "f13",
+              "breaker": "F13",
+              "name": "Intercom System",
+              "panel": "EH1",
+              "notes": [
+                "Cabin & ground intercom system — Establish alternative radio communications before isolating."
+              ],
+              "relatedBreakers": [],
+              "otherSources": []
+            },
+            {
+              "id": "f85",
+              "breaker": "F85",
+              "name": "Spreader Control Voltage",
+              "panel": "CAJ",
+              "notes": [
+                "Spreader control power — Stored capacitive energy in PLC/electronic cards.",
+                "Bleed residual pneumatic / hydraulic pressure on twistlock cylinder circuits after isolation."
+              ],
+              "relatedBreakers": [],
+              "otherSources": [
+                {
+                  "label": "Main Control Circuit",
+                  "description": "Check F11 in panel EH1 — Main Control ON."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "trolley",
+          "name": "Trolley",
+          "notes": [
+            "Ensure the trolley is completely stationary and rail storm locks/brakes are applied before servicing.",
+            "All four trolley motors are interlinked — isolating one disables trolley travel."
+          ],
+          "loads": [
+            {
+              "id": "q31",
+              "breaker": "Q31",
+              "name": "Trolley Travelling Motor 1",
+              "panel": "EH2",
+              "notes": [
+                "Trolley Travelling Motor 1 — Ensure trolley is at a complete standstill before isolating."
+              ],
+              "relatedBreakers": [
+                "Q32",
+                "Q33",
+                "Q33A"
+              ],
+              "otherSources": []
+            },
+            {
+              "id": "q32",
+              "breaker": "Q32",
+              "name": "Trolley Travelling Motor 2",
+              "panel": "EH2",
+              "notes": [
+                "Trolley Travelling Motor 2 — Ensure trolley is at a complete standstill before isolating."
+              ],
+              "relatedBreakers": [
+                "Q31",
+                "Q33",
+                "Q33A"
+              ],
+              "otherSources": []
+            },
+            {
+              "id": "q33",
+              "breaker": "Q33",
+              "name": "Trolley Travelling Motor 3",
+              "panel": "EH2",
+              "notes": [
+                "Trolley Travelling Motor 3 — Ensure trolley is at a complete standstill before isolating."
+              ],
+              "relatedBreakers": [
+                "Q31",
+                "Q32",
+                "Q33A"
+              ],
+              "otherSources": []
+            },
+            {
+              "id": "q33a",
+              "breaker": "Q33A",
+              "name": "Trolley Travelling Motor 4",
+              "panel": "EH2",
+              "notes": [
+                "Trolley Travelling Motor 4 — Ensure trolley is at a complete standstill before isolating."
+              ],
+              "relatedBreakers": [
+                "Q31",
+                "Q32",
+                "Q33"
+              ],
+              "otherSources": []
+            }
+          ]
+        },
+        {
+          "id": "hoist",
+          "name": "Hoist",
+          "notes": [
+            "Always lower spreader / suspended load fully to the ground before isolation — DANGER of suspended load drop."
+          ],
+          "loads": [
+            {
+              "id": "q70",
+              "breaker": "Q70",
+              "name": "Hoist Working Brake",
+              "panel": "EH2",
+              "notes": [
+                "Hoist Service/Working Brake — Lower load to the ground first. Suspended load will drop if brake release circuit is de-energized unexpectedly.",
+                "Control circuits may retain voltage from UPS; verify with a calibrated voltage meter."
+              ],
+              "relatedBreakers": [
+                "Q71"
+              ],
+              "otherSources": [
+                {
+                  "label": "Control Voltage & UPS",
+                  "description": "Check F11 and main PLC control UPS in panel EH1."
+                }
+              ]
+            },
+            {
+              "id": "q71",
+              "breaker": "Q71",
+              "name": "Hoist Emergency Brake",
+              "panel": "EH2",
+              "notes": [
+                "Hoist Emergency Caliper Brake — Verify drum is mechanically locked or load is fully grounded.",
+                "Stored mechanical energy in heavy spring thruster assembly — do not tamper with mechanics under tension."
+              ],
+              "relatedBreakers": [
+                "Q70"
+              ],
+              "otherSources": []
+            },
+            {
+              "id": "q80",
+              "breaker": "Q80",
+              "name": "Blower Hoisting",
+              "panel": "EH2",
+              "notes": [
+                "Hoisting motor forced-air cooling blower — Ensure fan has coasted to a complete stop before touching rotating parts.",
+                "Blower impeller blades can freewheel for several minutes after power isolation."
+              ],
+              "relatedBreakers": [],
+              "otherSources": []
+            }
+          ]
+        },
+        {
+          "id": "skew",
+          "name": "Skew",
+          "notes": [
+            "When isolating any skew motor, isolate both Q34 and Q35 together to prevent twisting or lateral frame stresses."
+          ],
+          "loads": [
+            {
+              "id": "q34",
+              "breaker": "Q34",
+              "name": "Skew Motor 1",
+              "panel": "TRJ",
+              "notes": [
+                "Skew Motors 1 & 2 are mechanically paired across the structure — also isolate Q35 in panel TR."
+              ],
+              "relatedBreakers": [
+                "Q35"
+              ],
+              "otherSources": []
+            },
+            {
+              "id": "q35",
+              "breaker": "Q35",
+              "name": "Skew Motor 2",
+              "panel": "TR",
+              "notes": [
+                "Skew Motors 1 & 2 are mechanically paired across the structure — also isolate Q34 in panel TRJ."
+              ],
+              "relatedBreakers": [
+                "Q34"
+              ],
+              "otherSources": []
+            }
+          ]
+        },
+        {
+          "id": "shift",
+          "name": "Shift",
+          "notes": [],
+          "loads": [
+            {
+              "id": "q52",
+              "breaker": "Q52",
+              "name": "Shift Motor",
+              "panel": "EH2",
+              "notes": [
+                "Shift mechanism drive — Ensure mechanical traverse is at zero position and parked before locking out."
+              ],
+              "relatedBreakers": [],
+              "otherSources": []
+            }
+          ]
+        },
+        {
+          "id": "hydraulic",
+          "name": "Hydraulic",
+          "notes": [
+            "WARNING: Hydraulic power pack retains high pressurized oil. Bleed hydraulic accumulator and zero pressure gauges before any maintenance."
+          ],
+          "loads": [
+            {
+              "id": "q45",
+              "breaker": "Q45",
+              "name": "Hydraulic Pump E House",
+              "panel": "EH2",
+              "notes": [
+                "E-House main hydraulic pump — Bleed accumulator and discharge stored fluid pressure completely before disassembly.",
+                "Verify all hydraulic isolation ball valves are locked in safe closed position."
+              ],
+              "relatedBreakers": [
+                "Q46"
+              ],
+              "otherSources": [
+                {
+                  "label": "Auxiliary Heating & Sensors",
+                  "description": "Check panel EH1 for oil sump heater and tank level monitoring feeds."
+                }
+              ]
+            },
+            {
+              "id": "q46",
+              "breaker": "Q46",
+              "name": "Hydraulic Pump Diesel Side",
+              "panel": "EH2",
+              "notes": [
+                "Diesel side hydraulic pump — Bleed accumulator pressure and verify 0 bar gauge reading.",
+                "Ensure diesel generator/engine is locked and tagged out to prevent accidental cranking."
+              ],
+              "relatedBreakers": [
+                "Q45"
+              ],
+              "otherSources": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
