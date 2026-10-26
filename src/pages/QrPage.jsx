@@ -10,19 +10,23 @@ export default function QrPage() {
   if (error) return <div className="state-card"><div className="state-icon">⚠️</div><h2>{error}</h2></div>
   if (!data)  return <div className="state-card"><div className="state-icon">⏳</div><h2>{t('state.loading')}</h2></div>
 
+  const currentBaseUrl = typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null')
+    ? `${window.location.origin}${import.meta.env.BASE_URL.replace(/\/$/, '')}`
+    : SITE_URL
+
   const entries = []
   for (const machine of data.machines) {
     entries.push({
       label: machine.name,
       sublabel: t('qr.homePage'),
-      url: `${SITE_URL}/#/m/${machine.id}`,
+      url: `${currentBaseUrl}/#/m/${machine.id}`,
     })
     for (const system of machine.systems) {
       for (const load of system.loads) {
         entries.push({
           label: `${machine.name} — ${load.breaker}`,
           sublabel: `${load.name} / ${system.name}`,
-          url: `${SITE_URL}/#/m/${machine.id}/s/${system.id}/l/${load.id}`,
+          url: `${currentBaseUrl}/#/m/${machine.id}/s/${system.id}/l/${load.id}`,
         })
       }
     }
@@ -32,7 +36,7 @@ export default function QrPage() {
     <main className="page qr-page">
       <h1 style={{ padding: '1rem 0 0.25rem' }}>{t('qr.title')}</h1>
       <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
-        {t('qr.urlNote')} <code dir="ltr">{SITE_URL}</code>
+        {t('qr.urlNote')} <code dir="ltr">{currentBaseUrl}</code>
       </p>
       <button
         onClick={() => window.print()}
