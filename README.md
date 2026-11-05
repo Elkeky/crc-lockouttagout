@@ -38,6 +38,7 @@ npm run dev
               "breaker": "Q70",         // رقم القاطع (يظهر كبيرًا في بطاقة الخطر)
               "name": "Hoist Working Brake", // اسم الحمل
               "panel": "EH2",           // اللوحة التي يتواجد فيها القاطع
+              "lotoImage": "images/loto-q-breaker-photo.jpeg", // مسار صورة LOTO ضمن مجلد public/
               "notes": [                // ملاحظات السلامة (قائمة)
                 "ملاحظة 1",
                 "ملاحظة 2"
@@ -68,6 +69,7 @@ npm run dev
   "breaker": "Q99",
   "name": "اسم الحمل الجديد",
   "panel": "EH2",
+  "lotoImage": "images/loto-q-breaker-photo.jpeg",
   "notes": [],
   "relatedBreakers": [],
   "otherSources": []
