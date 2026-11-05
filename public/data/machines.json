@@ -17,6 +17,7 @@
               "breaker": "Q41",
               "name": "Supply Gantry Motor 1",
               "panel": "EH5",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "Gantry Travel Motor 1 — Ensure crane is completely stationary before isolating.",
                 "All four travel motors are mechanically and electrically coupled via speed synchronization."
@@ -33,6 +34,7 @@
               "breaker": "Q42",
               "name": "Supply Gantry Motor 2",
               "panel": "EH5",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "Gantry Travel Motor 2 — Ensure crane is completely stationary before isolating."
               ],
@@ -48,6 +50,7 @@
               "breaker": "Q43",
               "name": "Supply Gantry Motor 3",
               "panel": "EH5",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "Gantry Travel Motor 3 — Ensure crane is completely stationary before isolating."
               ],
@@ -63,6 +66,7 @@
               "breaker": "Q44",
               "name": "Supply Gantry Motor 4",
               "panel": "EH5",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "Gantry Travel Motor 4 — Ensure crane is completely stationary before isolating."
               ],
@@ -78,6 +82,7 @@
               "breaker": "F67",
               "name": "Gantry Lights — Corner 1 & 4",
               "panel": "EH1",
+              "lotoImage": "images/loto-f-breaker-photo.png",
               "notes": [
                 "Lighting for corners 1 & 4 — Ensure lighting control switch is off before opening breaker."
               ],
@@ -96,6 +101,7 @@
               "breaker": "F67A",
               "name": "Gantry Lights — Corner 2 & 3",
               "panel": "EH1",
+              "lotoImage": "images/loto-f-breaker-photo.png",
               "notes": [
                 "Lighting for corners 2 & 3 — Ensure lighting control switch is off before opening breaker."
               ],
@@ -114,6 +120,7 @@
               "breaker": "F6",
               "name": "Lighting Transformer",
               "panel": "EH1",
+              "lotoImage": "images/loto-f-breaker-photo.png",
               "notes": [
                 "Main lighting transformer supply — Opening breaker de-energizes all floodlights and platform lighting."
               ],
@@ -128,6 +135,7 @@
               "breaker": "F11",
               "name": "Control ON",
               "panel": "EH1",
+              "lotoImage": "images/loto-f-breaker-photo.png",
               "notes": [
                 "Main Crane Control Circuit Safety — Isolating disables all motion control and safety circuits.",
                 "Notify crane operator and ensure all systems are securely parked before isolating."
@@ -140,6 +148,7 @@
               "breaker": "F13",
               "name": "Intercom System",
               "panel": "EH1",
+              "lotoImage": "images/loto-f-breaker-photo.png",
               "notes": [
                 "Cabin & ground intercom system — Establish alternative radio communications before isolating."
               ],
@@ -151,6 +160,7 @@
               "breaker": "F85",
               "name": "Spreader Control Voltage",
               "panel": "CAJ",
+              "lotoImage": "images/loto-f-breaker-photo.png",
               "notes": [
                 "Spreader control power — Stored capacitive energy in PLC/electronic cards.",
                 "Bleed residual pneumatic / hydraulic pressure on twistlock cylinder circuits after isolation."
@@ -178,6 +188,7 @@
               "breaker": "Q31",
               "name": "Trolley Travelling Motor 1",
               "panel": "EH2",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "Trolley Travelling Motor 1 — Ensure trolley is at a complete standstill before isolating."
               ],
@@ -193,6 +204,7 @@
               "breaker": "Q32",
               "name": "Trolley Travelling Motor 2",
               "panel": "EH2",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "Trolley Travelling Motor 2 — Ensure trolley is at a complete standstill before isolating."
               ],
@@ -208,6 +220,7 @@
               "breaker": "Q33",
               "name": "Trolley Travelling Motor 3",
               "panel": "EH2",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "Trolley Travelling Motor 3 — Ensure trolley is at a complete standstill before isolating."
               ],
@@ -223,6 +236,7 @@
               "breaker": "Q33A",
               "name": "Trolley Travelling Motor 4",
               "panel": "EH2",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "Trolley Travelling Motor 4 — Ensure trolley is at a complete standstill before isolating."
               ],
@@ -247,6 +261,7 @@
               "breaker": "Q70",
               "name": "Hoist Working Brake",
               "panel": "EH2",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "Hoist Service/Working Brake — Lower load to the ground first. Suspended load will drop if brake release circuit is de-energized unexpectedly.",
                 "Control circuits may retain voltage from UPS; verify with a calibrated voltage meter."
@@ -266,6 +281,7 @@
               "breaker": "Q71",
               "name": "Hoist Emergency Brake",
               "panel": "EH2",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "Hoist Emergency Caliper Brake — Verify drum is mechanically locked or load is fully grounded.",
                 "Stored mechanical energy in heavy spring thruster assembly — do not tamper with mechanics under tension."
@@ -280,6 +296,7 @@
               "breaker": "Q80",
               "name": "Blower Hoisting",
               "panel": "EH2",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "Hoisting motor forced-air cooling blower — Ensure fan has coasted to a complete stop before touching rotating parts.",
                 "Blower impeller blades can freewheel for several minutes after power isolation."
@@ -301,6 +318,7 @@
               "breaker": "Q34",
               "name": "Skew Motor 1",
               "panel": "TRJ",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "Skew Motors 1 & 2 are mechanically paired across the structure — also isolate Q35 in panel TR."
               ],
@@ -314,6 +332,7 @@
               "breaker": "Q35",
               "name": "Skew Motor 2",
               "panel": "TR",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "Skew Motors 1 & 2 are mechanically paired across the structure — also isolate Q34 in panel TRJ."
               ],
@@ -334,6 +353,7 @@
               "breaker": "Q52",
               "name": "Shift Motor",
               "panel": "EH2",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "Shift mechanism drive — Ensure mechanical traverse is at zero position and parked before locking out."
               ],
@@ -354,6 +374,7 @@
               "breaker": "Q45",
               "name": "Hydraulic Pump E House",
               "panel": "EH2",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "E-House main hydraulic pump — Bleed accumulator and discharge stored fluid pressure completely before disassembly.",
                 "Verify all hydraulic isolation ball valves are locked in safe closed position."
@@ -373,6 +394,7 @@
               "breaker": "Q46",
               "name": "Hydraulic Pump Diesel Side",
               "panel": "EH2",
+              "lotoImage": "images/loto-q-breaker-photo.jpeg",
               "notes": [
                 "Diesel side hydraulic pump — Bleed accumulator pressure and verify 0 bar gauge reading.",
                 "Ensure diesel generator/engine is locked and tagged out to prevent accidental cranking."
