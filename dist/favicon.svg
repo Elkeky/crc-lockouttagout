@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Background -->
+  <rect width="64" height="64" rx="12" fill="#c0392b"/>
+  <!-- Hazard stripes top -->
+  <clipPath id="top-clip">
+    <rect x="0" y="0" width="64" height="10" rx="12"/>
+  </clipPath>
+  <g clip-path="url(#top-clip)">
+    <rect x="0" y="0" width="64" height="10" fill="#f4d03f"/>
+    <rect x="0" y="0" width="10" height="10" fill="#1a1410"/>
+    <rect x="20" y="0" width="10" height="10" fill="#1a1410"/>
+    <rect x="40" y="0" width="10" height="10" fill="#1a1410"/>
+    <rect x="60" y="0" width="10" height="10" fill="#1a1410"/>
+  </g>
+  <!-- Lock icon -->
+  <rect x="22" y="28" width="20" height="16" rx="3" fill="white" opacity="0.95"/>
+  <path d="M24 28v-5a8 8 0 0 1 16 0v5" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.95"/>
+  <circle cx="32" cy="36" r="2.5" fill="#c0392b"/>
+  <!-- Hazard stripes bottom -->
+  <clipPath id="bot-clip">
+    <rect x="0" y="54" width="64" height="10" rx="12"/>
+  </clipPath>
+  <g clip-path="url(#bot-clip)">
+    <rect x="0" y="54" width="64" height="10" fill="#f4d03f"/>
+    <rect x="0" y="54" width="10" height="10" fill="#1a1410"/>
+    <rect x="20" y="54" width="10" height="10" fill="#1a1410"/>
+    <rect x="40" y="54" width="10" height="10" fill="#1a1410"/>
+    <rect x="60" y="54" width="10" height="10" fill="#1a1410"/>
+  </g>
+</svg>

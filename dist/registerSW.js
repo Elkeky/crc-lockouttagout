@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/crc-lockouttagout/sw.js', { scope: '/crc-lockouttagout/' })})}

@@ -477,6 +477,15 @@ h3 { font-size: 1rem; font-weight: 600; }
 
 .info-card-body { padding: 0.75rem 0.85rem; }
 
+.loto-picture-image {
+  display: block;
+  width: 100%;
+  max-height: 28rem;
+  object-fit: contain;
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+}
+
 /* ─── Notes list ─────────────────────────────────────────────────────────── */
 .notes-list {
   list-style: none;

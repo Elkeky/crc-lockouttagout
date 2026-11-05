@@ -30,6 +30,8 @@ export const translations = {
     'load.danger.header': '⚡ DANGER · DO NOT OPERATE · خطر لا تشغّل ⚡',
     'load.open': 'افتح القاطع',
     'load.inPanel': 'في اللوحة',
+    'load.lotoPicture': 'صورة LOTO للقاطع',
+    'load.lotoPicture.alt': 'صورة LOTO للقاطع {breaker}',
 
     // Load page — info cards
     'load.safetyNotes': 'ملاحظات السلامة',
@@ -99,6 +101,8 @@ export const translations = {
     'load.danger.header': '⚡ DANGER · DO NOT OPERATE ⚡',
     'load.open': 'Open Breaker',
     'load.inPanel': 'In Panel',
+    'load.lotoPicture': 'Breaker LOTO Photo',
+    'load.lotoPicture.alt': 'LOTO photo for breaker {breaker}',
 
     'load.safetyNotes': 'Safety Notes',
     'load.relatedBreakers': 'Related Breakers',

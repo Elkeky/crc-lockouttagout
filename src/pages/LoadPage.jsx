@@ -61,6 +61,20 @@ export default function LoadPage() {
             </div>
           </div>
 
+          {load.lotoImage && (
+            <section className="info-card loto-picture">
+              <div className="info-card-header"><span>📷</span>{t('load.lotoPicture')}</div>
+              <div className="info-card-body">
+                <img
+                  className="loto-picture-image"
+                  src={`${import.meta.env.BASE_URL}${load.lotoImage}`}
+                  alt={t('load.lotoPicture.alt').replace('{breaker}', load.breaker)}
+                  loading="lazy"
+                />
+              </div>
+            </section>
+          )}
+
           {/* Safety Notes */}
           {load.notes?.length > 0 && (
             <div className="info-card">
