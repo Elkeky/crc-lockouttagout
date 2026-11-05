@@ -25,7 +25,7 @@ export default defineConfig({
         ]
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,json}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,jpeg,jpg,json}'],
         runtimeCaching: [
           {
             urlPattern: /\/data\/machines\.json$/,
