@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'robots.txt', 'data/machines.json'],
+      includeAssets: ['favicon.svg', 'robots.txt', 'data/machines.json', 'images/**'],
       manifest: {
         name: 'LOTO RTG CRC',
         short_name: 'LOTO',

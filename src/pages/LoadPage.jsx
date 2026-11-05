@@ -67,7 +67,7 @@ export default function LoadPage() {
               <div className="info-card-body">
                 <img
                   className="loto-picture-image"
-                  src={`${import.meta.env.BASE_URL}${load.lotoImage}`}
+                  src={`${import.meta.env.BASE_URL}${load.lotoImage}`.replace('//', '/')}
                   alt={t('load.lotoPicture.alt').replace('{breaker}', load.breaker)}
                   loading="lazy"
                 />
